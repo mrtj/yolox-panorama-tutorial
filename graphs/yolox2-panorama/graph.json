@@ -21,6 +21,14 @@
         ],
         "nodes": [
             {
+                "name": "code_node",
+                "interface": "123456789012::application_logic.interface"
+            },
+            {
+                "name": "model_node",
+                "interface": "123456789012::yolox_s.interface"
+            },
+            {
                 "name": "camera_node",
                 "interface": "panorama::abstract_rtsp_media_source.rtsp_v1_interface",
                 "overridable": true,
