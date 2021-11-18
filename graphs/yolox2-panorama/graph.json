@@ -9,6 +9,10 @@
             {
                 "name": "panorama::hdmi_data_sink",
                 "version": "1.0"
+            },
+            {
+                "name": "123456789012::application_logic",
+                "version": "1.0"
             }
         ],
         "nodes": [

@@ -1,0 +1,10 @@
+{
+    "nodePackage": {
+        "envelopeVersion": "2021-01-01",
+        "name": "application_logic",
+        "version": "1.0",
+        "description": "Default description for package application_logic",
+        "assets": [],
+        "interfaces": []
+    }
+}
