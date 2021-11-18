@@ -1,11 +1,11 @@
 {
     "mlModelDescriptor": {
         "envelopeVersion": "2021-01-01",
-        "framework": "",
+        "framework": "ONNX",
         "inputs": [
             {
-                "name": "",
-                "shape": []
+                "name": "images",
+                "shape": [1, 3, 640, 640]
             }
         ]
     }
