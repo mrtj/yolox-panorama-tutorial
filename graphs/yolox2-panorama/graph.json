@@ -43,6 +43,16 @@
                 "interface": "panorama::hdmi_data_sink.hdmi0",
                 "overridable": false,
                 "launch": "onAppStart"
+            },
+            {
+                "name": "detection_threshold",
+                "interface": "float32",
+                "value": 20.0,
+                "overridable": true,
+                "decorator": {
+                  "title": "Threshold",
+                  "description": "The minimum confidence percentage for a positive classification."
+                }
             }
         ],
         "edges": []
