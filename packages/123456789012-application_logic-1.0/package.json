@@ -5,6 +5,29 @@
         "version": "1.0",
         "description": "Default description for package application_logic",
         "assets": [],
-        "interfaces": []
+        "interfaces":  [
+            {
+                "name": "interface",
+                "category": "business_logic",
+                "asset": "",
+                "inputs": [
+                    {
+                        "name": "video_in",
+                        "type": "media"
+                    },
+                    {
+                        "name": "threshold",
+                        "type": "float32"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "description": "Video stream output",
+                        "name": "video_out",
+                        "type": "media"
+                    }
+                ]
+            }
+        ]
     }
 }
