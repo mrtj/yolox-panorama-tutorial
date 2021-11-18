@@ -4,8 +4,19 @@
         "name": "application_logic",
         "version": "1.0",
         "description": "Default description for package application_logic",
-        "assets": [],
-        "interfaces":  [
+        "assets": [
+            {
+                "name": "code",
+                "implementations": [
+                    {
+                        "type": "container",
+                        "assetUri": "d57c403ca9f2c6e887892db13da8d6a6fe74053e90b3aefb51bfea9f352a7618.tar.gz",
+                        "descriptorUri": "3d89b1e40eb8ffa114505ed7ab5dfd702edc8ecfc2638ee8dae6fdbf17a961e4.json"
+                    }
+                ]
+            }
+        ],
+        "interfaces": [
             {
                 "name": "interface",
                 "category": "business_logic",
@@ -23,6 +34,23 @@
                 "outputs": [
                     {
                         "description": "Video stream output",
+                        "name": "video_out",
+                        "type": "media"
+                    }
+                ]
+            },
+            {
+                "name": "code_interface",
+                "category": "business_logic",
+                "asset": "code",
+                "inputs": [
+                    {
+                        "name": "video_in",
+                        "type": "media"
+                    }
+                ],
+                "outputs": [
+                    {
                         "name": "video_out",
                         "type": "media"
                     }

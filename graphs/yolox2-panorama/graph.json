@@ -55,6 +55,12 @@
                     "title": "Threshold",
                     "description": "The minimum confidence percentage for a positive classification."
                 }
+            },
+            {
+                "name": "code_node",
+                "interface": "123456789012::application_logic.code_interface",
+                "overridable": false,
+                "launch": "onAppStart"
             }
         ],
         "edges": [
