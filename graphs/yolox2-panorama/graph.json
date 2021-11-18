@@ -50,9 +50,15 @@
                 "value": 20.0,
                 "overridable": true,
                 "decorator": {
-                  "title": "Threshold",
-                  "description": "The minimum confidence percentage for a positive classification."
+                    "title": "Threshold",
+                    "description": "The minimum confidence percentage for a positive classification."
                 }
+            },
+            {
+                "name": "yolox_s_asset",
+                "interface": "123456789012::yolox_s.yolox_s_asset_interface",
+                "overridable": false,
+                "launch": "onAppStart"
             }
         ],
         "edges": [

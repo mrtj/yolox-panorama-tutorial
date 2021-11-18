@@ -4,7 +4,36 @@
         "name": "yolox_s",
         "version": "1.0",
         "description": "Default description for package yolox_s",
-        "assets": [],
-        "interfaces": []
+        "assets": [
+            {
+                "name": "yolox_s_asset",
+                "implementations": [
+                    {
+                        "type": "model",
+                        "assetUri": "7fab4644d681f25c86c997bfa6251cbc2f343fbdc6313056b7d71680d1464cdd.tar.gz",
+                        "descriptorUri": "0ceb874cc3b9e154f4153072c01f49406ab4950dbe4e8a69d0827effd5e9bdde.json"
+                    }
+                ]
+            }
+        ],
+        "interfaces": [
+            {
+                "name": "yolox_s_asset_interface",
+                "category": "ml_model",
+                "asset": "yolox_s_asset",
+                "inputs": [
+                    {
+                        "name": "video_in",
+                        "type": "media"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "video_out",
+                        "type": "media"
+                    }
+                ]
+            }
+        ]
     }
 }
