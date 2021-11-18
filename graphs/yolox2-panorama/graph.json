@@ -1,8 +1,24 @@
 {
     "nodeGraph": {
         "envelopeVersion": "2021-01-01",
-        "packages": [],
-        "nodes": [],
+        "packages": [
+            {
+                "name": "panorama::abstract_rtsp_media_source",
+                "version": "1.0"
+            }
+        ],
+        "nodes": [
+            {
+                "name": "camera_node",
+                "interface": "panorama::abstract_rtsp_media_source.rtsp_v1_interface",
+                "overridable": true,
+                "launch": "onAppStart",
+                "decorator": {
+                    "title": "Camera camera_node",
+                    "description": "Default description for camera camera_node"
+                }
+            }
+        ],
         "edges": []
     }
 }
