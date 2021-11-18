@@ -1,0 +1,12 @@
+{
+    "mlModelDescriptor": {
+        "envelopeVersion": "2021-01-01",
+        "framework": "",
+        "inputs": [
+            {
+                "name": "",
+                "shape": []
+            }
+        ]
+    }
+}

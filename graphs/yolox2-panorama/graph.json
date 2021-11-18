@@ -13,6 +13,10 @@
             {
                 "name": "123456789012::application_logic",
                 "version": "1.0"
+            },
+            {
+                "name": "123456789012::yolox_s",
+                "version": "1.0"
             }
         ],
         "nodes": [

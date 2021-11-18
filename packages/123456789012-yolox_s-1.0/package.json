@@ -1,0 +1,10 @@
+{
+    "nodePackage": {
+        "envelopeVersion": "2021-01-01",
+        "name": "yolox_s",
+        "version": "1.0",
+        "description": "Default description for package yolox_s",
+        "assets": [],
+        "interfaces": []
+    }
+}
