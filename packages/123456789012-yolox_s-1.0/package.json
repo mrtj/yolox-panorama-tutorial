@@ -18,7 +18,7 @@
         ],
         "interfaces": [
             {
-                "name": "yolox_s_asset_interface",
+                "name": "interface",
                 "category": "ml_model",
                 "asset": "yolox_s_asset",
                 "inputs": [
