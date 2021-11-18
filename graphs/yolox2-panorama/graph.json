@@ -22,7 +22,9 @@
         "nodes": [
             {
                 "name": "code_node",
-                "interface": "123456789012::application_logic.interface"
+                "interface": "123456789012::application_logic.code_interface",
+                "overridable": false,
+                "launch": "onAppStart"
             },
             {
                 "name": "model_node",
@@ -55,12 +57,6 @@
                     "title": "Threshold",
                     "description": "The minimum confidence percentage for a positive classification."
                 }
-            },
-            {
-                "name": "code_node",
-                "interface": "123456789012::application_logic.code_interface",
-                "overridable": false,
-                "launch": "onAppStart"
             }
         ],
         "edges": [

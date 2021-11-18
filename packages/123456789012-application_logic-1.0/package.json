@@ -6,7 +6,7 @@
         "description": "Default description for package application_logic",
         "assets": [
             {
-                "name": "code",
+                "name": "code_asset",
                 "implementations": [
                     {
                         "type": "container",
@@ -20,7 +20,7 @@
             {
                 "name": "interface",
                 "category": "business_logic",
-                "asset": "",
+                "asset": "code_asset",
                 "inputs": [
                     {
                         "name": "video_in",
@@ -34,23 +34,6 @@
                 "outputs": [
                     {
                         "description": "Video stream output",
-                        "name": "video_out",
-                        "type": "media"
-                    }
-                ]
-            },
-            {
-                "name": "code_interface",
-                "category": "business_logic",
-                "asset": "code",
-                "inputs": [
-                    {
-                        "name": "video_in",
-                        "type": "media"
-                    }
-                ],
-                "outputs": [
-                    {
                         "name": "video_out",
                         "type": "media"
                     }
