@@ -5,6 +5,10 @@
             {
                 "name": "panorama::abstract_rtsp_media_source",
                 "version": "1.0"
+            },
+            {
+                "name": "panorama::hdmi_data_sink",
+                "version": "1.0"
             }
         ],
         "nodes": [
@@ -17,6 +21,12 @@
                     "title": "Camera camera_node",
                     "description": "Default description for camera camera_node"
                 }
+            },
+            {
+                "name": "display_node",
+                "interface": "panorama::hdmi_data_sink.hdmi0",
+                "overridable": false,
+                "launch": "onAppStart"
             }
         ],
         "edges": []
