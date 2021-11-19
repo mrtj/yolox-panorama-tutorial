@@ -1,7 +1,7 @@
 {
     "mlModelDescriptor": {
         "envelopeVersion": "2021-01-01",
-        "framework": "ONNX",
+        "framework": "PYTORCH",
         "inputs": [
             {
                 "name": "images",
