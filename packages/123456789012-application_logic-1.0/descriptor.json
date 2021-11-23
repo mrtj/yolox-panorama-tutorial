@@ -3,7 +3,7 @@
         "envelopeVersion": "2021-01-01",
         "entry": {
             "path": "python3",
-            "name": "/panorama/<entry_file_name_under_src>"
+            "name": "/panorama/application.py"
         }
     }
 }

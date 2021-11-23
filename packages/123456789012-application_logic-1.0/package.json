@@ -6,12 +6,12 @@
         "description": "Default description for package application_logic",
         "assets": [
             {
-                "name": "code_asset",
+                "name": "code",
                 "implementations": [
                     {
                         "type": "container",
-                        "assetUri": "d57c403ca9f2c6e887892db13da8d6a6fe74053e90b3aefb51bfea9f352a7618.tar.gz",
-                        "descriptorUri": "3d89b1e40eb8ffa114505ed7ab5dfd702edc8ecfc2638ee8dae6fdbf17a961e4.json"
+                        "assetUri": "d0d11b3dfb6e2d28cc655d160f30358a7c223583c3a7e2849e22811d25f2b13b.tar.gz",
+                        "descriptorUri": "7dbe853ca589a92a7e7cab7365871789ce15327cf793084c4495363b375313a2.json"
                     }
                 ]
             }
@@ -20,7 +20,7 @@
             {
                 "name": "interface",
                 "category": "business_logic",
-                "asset": "code_asset",
+                "asset": "code",
                 "inputs": [
                     {
                         "name": "video_in",
