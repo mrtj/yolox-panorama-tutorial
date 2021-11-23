@@ -6,7 +6,7 @@ import numpy as np
 
 class Application(panoramasdk.node):
     def __init__(self, logger):
-        super().__init__(self)
+        super().__init__()
         self.logger = logger
         self.MODEL_NODE = 'model_node'
         self.MODEL_INPUT_NAME = 'images'
@@ -42,8 +42,8 @@ class Application(panoramasdk.node):
         # Process results
         self.postprocess(inference_results, stream, ratio)
 
-    def preprocess(img, size):
-        return np.ones((size[0], size[1], 3), dtype=np.uint8) * 114
+    def preprocess(self, img, size):
+        return ((np.ones((size[0], size[1], 3), dtype=np.uint8) * 114), 1.0)
 
     def postprocess(self, inference_results, stream, ratio):
         pass

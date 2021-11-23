@@ -22,7 +22,7 @@
         "nodes": [
             {
                 "name": "code_node",
-                "interface": "123456789012::application_logic.code_interface",
+                "interface": "123456789012::application_logic.interface",
                 "overridable": false,
                 "launch": "onAppStart"
             },
