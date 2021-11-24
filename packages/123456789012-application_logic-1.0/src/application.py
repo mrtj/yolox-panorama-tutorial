@@ -69,14 +69,14 @@ class Application(panoramasdk.node):
         media_scale = np.asarray([media_width, media_height, media_width, media_height])
         for output in inference_results:
             self.logger.debug(f'output shape: {output.shape}')
-            boxes, scores, class_indices = self.postprocess(output, (self.MODEL_DIM, self.MODEL_DIM), ratio)
+            boxes, scores, class_indices = self.postprocess(output, self.MODEL_INPUT_SIZE, ratio)
             self.logger.debug(f'boxes shape: {boxes.shape}')
             self.logger.debug(f'scores shape: {scores.shape}')
             self.logger.debug(f'class_indices shape: {class_indices.shape}')
             for box, score, class_idx in zip(boxes, scores, class_indices):
-                if score * 100 > self.threshold and class_idx in self.classids:
+                if score * 100 > self.threshold:
                     (left, top, right, bottom) = np.clip(box / media_scale, 0, 1)
-                    self.logger.debug(f'box: {(left, top, right, bottom)}')
+                    self.logger.info(f'class: {class_idx}, score: {score}, box: {(left, top, right, bottom)}')
                     stream.add_rect(left, top, right, bottom)
 
     def postprocess(self, result, input_shape, ratio):
